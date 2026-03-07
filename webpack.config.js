@@ -39,7 +39,7 @@ module.exports = {
             },
             // Fonts support
             {
-                test: /\.(woff|woff2|eot|ttf|otf)&/i,
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: "asset/resource"
             },
         ],
