@@ -5,14 +5,15 @@
   "private": true,
   "scripts": {
     "start": "webpack server",
-    "build": "webpack --mode production",
+    "build": "webpack",
     "lint": "eslint src/",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "css-loader": "^7.1.4",
     "dotenv": "^17.3.1",
     "eslint": "^10.0.2",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.6",
     "style-loader": "^4.0.0",
     "webpack": "^5.105.4",
