@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    mode: "development", // change to "production" for final build
+    mode: "production",
 
     entry: "./src/index.js",
 
@@ -23,6 +23,9 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./src/index.html", // uses your HTML as the base
         }),
+        new webpack.DefinePlugin({
+            "process.env.WEATHER_API_KEY": JSON.stringify(process.env.WEATHER_API_KEY)
+        })
     ],
 
     module: {

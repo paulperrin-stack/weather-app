@@ -7,5 +7,43 @@
 </head>
 <body>
     
+    <header>
+        <h1>Weather App</h1>
+    </header>
+
+    <main>
+
+        <!-- Search Form -->
+        <form id="search-form">
+            <input
+                type="text"
+                id="city-input"
+                placeholder="Entry a city..."
+                autocomplete="off"
+            />
+            <button type="submit">Search</button>
+        </form>
+        
+        <!-- Unit Toggle -->
+        <button id="unit-toggle">Switch to °F</button>
+
+        <!-- Loading indicator (hidden by default) -->
+        <p id="loading" class="hidden">Loading...</p>
+
+        <!-- Error message (hidden by default) -->
+        <p id="error-message" class="hidden">City not found. Try again.</p>
+
+        <!-- Weather Result -->
+        <section id="weather-result" class="hidden">
+            <h2 id="city-name"></h2>
+            <p id="date"></p>
+            <p id="condition"></p>
+            <p id="temperature"></p>
+            <p id="feels-like"></p>
+            <p id="humidity"></p>
+            <p id="wind-speed"></p>
+        </section>
+
+    </main>
 </body>
 </html>
