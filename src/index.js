@@ -1,6 +1,6 @@
 import "./style.css";
 
-const API_KEY = process.env.WEATHER_API_KEY;
+const API_KEY = "3QG4S4CSRPW4ZWHZLAMQU3BY8";
 
 // DOM elements
 
